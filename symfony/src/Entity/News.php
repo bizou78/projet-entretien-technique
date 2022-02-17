@@ -4,6 +4,7 @@
 namespace App\Entity;
 
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -16,6 +17,10 @@ use App\Repository\NewsRepository;
  *
  * @package App\Entity
  */
+#[ApiResource(
+    collectionOperations: ['get'],
+    itemOperations: ['get']
+)]
 class News
 {
 
