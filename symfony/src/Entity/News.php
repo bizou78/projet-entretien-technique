@@ -32,7 +32,7 @@ class News
     private string $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text")
      */
     private string $description;
 
@@ -40,6 +40,12 @@ class News
      * @ORM\Column(type="datetime")
      */
     private DateTime $publishedDate;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     *
+     */
+    private ?string $image;
 
     /**
      * @return mixed
@@ -97,4 +103,19 @@ class News
         $this->publishedDate = $publishedDate;
     }
 
+    /**
+     * @return string|null
+     */
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string|null $image
+     */
+    public function setImage(?string $image): void
+    {
+        $this->image = $image;
+    }
 }
