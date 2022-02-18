@@ -52,10 +52,13 @@ services:
 
   # node
   node-service:
-    image: node:latest
+    build:
+      context: ../react-app
+      dockerfile: ../docker/node/Dockerfile
     container_name: node-container
+    ports:
+      - "3000:3000"
     volumes:
-      - ../symfony:/var/www/symfony
-    working_dir: /var/www/symfony
+      - ../react-app/src:/app/src
     networks:
       - app-network
