@@ -234,5 +234,5 @@ modules.xml
 /symfony/web/css/
 /symfony/web/js/
 
-/docker
+/docker/mysql
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm,phpstorm+all
