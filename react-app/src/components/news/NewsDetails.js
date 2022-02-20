@@ -19,7 +19,6 @@ export const NewsDetails = () => {
             </div>
             <img src="https://random.imagecdn.app/800/400" alt="Image News" />
             <div>{news.description}</div>
-            <div>{news.publishedDate}</div>
 
             <Link to={'/news'} className="btn dark">Retour</Link>
         </div>

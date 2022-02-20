@@ -1,5 +1,5 @@
 import styles from './News.module.scss';
-import { useMatch, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const News = ({ news }) => {
     const { id, title, description, publishedDate, image } = news;
@@ -24,7 +24,7 @@ export const News = ({ news }) => {
             </div>
             <div>
                 <p>
-                    {description}
+                    {description.slice(0, 50)}
                 </p>
             </div>
         </div>
