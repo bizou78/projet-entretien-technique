@@ -3,7 +3,7 @@ build:
 	cd docker/ && docker-compose build
 
 start:
-	cd docker/ && docker-compose up -d --build
+	cd docker/ && sudo docker-compose up -d --build
 
 stop:
 	cd docker/ && docker-compose down --remove-orphans
