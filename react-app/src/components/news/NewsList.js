@@ -21,6 +21,7 @@ export const NewsList = () => {
 
     return news ? (
         <div className={styles.newsList}>
+            <h1>Voici les News</h1>
             {news.map((news) => (
                 <News key={news.id} news={news} />
             ))}
