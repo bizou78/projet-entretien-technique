@@ -149,7 +149,7 @@ Rendre l'application responsive.
 Ajouter un système de pagination.
 
 
-##Difficultées rencontrées
+## Difficultées rencontrées
 
 Mise en place du conteneur Docker React.
 
