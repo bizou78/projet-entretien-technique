@@ -13,13 +13,18 @@ Pour installer ce projet, veuillez suivre ces étapes :
 ```bash
 git clone https://github.com/bizou78/projet-entretien-technique.git
 ```
+
+```bash
+cd projet-entretien-technique
+```
+
 ### Démarrer les conteneurs Docker
 ```bash
 make start
 ```
 ### Initaliser le projet symfony
 ```bash
-make install-full
+make first-install
 ```
 
 ## Etapes de developement
@@ -134,6 +139,8 @@ Ajouter la possibilité d'importer des News depuis plusieurs Api.
 
 ### Front React
 Ajout de test.
+
+Améliorer l'UX/UI
 
 Ajouter un formulaire pour créer une News.
 
